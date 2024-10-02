@@ -118,3 +118,10 @@ class BlurFilter(Filter):
 - Modifying the Filter Pipeline:
 
   In main.py, you can modify the order in which filters are applied or add/remove filters from the pipeline.
+
+
+## Contacts
+- Denis Mikhailov - d.mikhailov@innopolis.university
+- Anton Chulakov - a.chulakov@innopolis.university
+- Adel Shagaliev - a.shagaliev@innopolis.iniversity
+- Ilya Zubkov - i.zubkov@innopolis.university
