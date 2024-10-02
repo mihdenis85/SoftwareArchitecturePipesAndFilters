@@ -1,5 +1,6 @@
 import cv2
 
+
 class Source:
     def __init__(self, video_source='video.mp4'):
         self.cap = cv2.VideoCapture(video_source)

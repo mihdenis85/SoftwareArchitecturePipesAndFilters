@@ -1,6 +1,7 @@
 import cv2
 from src.filter import Filter
 
+
 class ResizeFilter(Filter):
     def __init__(self, width, height):
         super().__init__()

@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Place your video file:
+1. Place your video file (or keep existing):
 
    Update the path in main.py:
 

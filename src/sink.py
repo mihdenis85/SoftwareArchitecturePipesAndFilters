@@ -1,5 +1,6 @@
 import cv2
 
+
 class Sink:
     def __init__(self, window_name='Video'):
         self.window_name = window_name

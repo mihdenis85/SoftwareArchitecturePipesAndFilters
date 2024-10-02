@@ -1,6 +1,7 @@
 import cv2
 from src.filter import Filter
 
+
 class MirrorFilter(Filter):
     def process(self):
         frame = self.input_pipe.receive()
