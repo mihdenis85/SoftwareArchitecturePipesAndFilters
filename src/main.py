@@ -23,7 +23,7 @@ def main():
     grayscale_filter = GrayscaleFilter()
     mirror_filter = MirrorFilter()
     resize_filter = ResizeFilter(1280, 720)
-    edge_filter = BlurFilter()
+    blur_filter = BlurFilter()
 
     grayscale_filter.input_pipe = pipe1
     grayscale_filter.output_pipe = pipe2
@@ -34,8 +34,8 @@ def main():
     resize_filter.input_pipe = pipe3
     resize_filter.output_pipe = pipe4
 
-    edge_filter.input_pipe = pipe4
-    edge_filter.output_pipe = pipe5
+    blur_filter.input_pipe = pipe4
+    blur_filter.output_pipe = pipe5
 
     sink = Sink()
 
@@ -50,7 +50,7 @@ def main():
             grayscale_filter.process()
             mirror_filter.process()
             resize_filter.process()
-            edge_filter.process()
+            blur_filter.process()
 
             processed_frame = pipe5.receive()
 
