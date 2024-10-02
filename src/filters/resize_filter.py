@@ -3,8 +3,8 @@ from src.filter import Filter
 
 
 class ResizeFilter(Filter):
-    def __init__(self, width, height):
-        super().__init__()
+    def __init__(self, input_pipe, output_pipe, width, height):
+        super().__init__(input_pipe, output_pipe)
         self.size = (width, height)
 
     def process(self):

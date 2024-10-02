@@ -20,22 +20,10 @@ def main():
     pipe4 = Pipe()
     pipe5 = Pipe()
 
-    grayscale_filter = GrayscaleFilter()
-    mirror_filter = MirrorFilter()
-    resize_filter = ResizeFilter(1280, 720)
-    blur_filter = BlurFilter()
-
-    grayscale_filter.input_pipe = pipe1
-    grayscale_filter.output_pipe = pipe2
-
-    mirror_filter.input_pipe = pipe2
-    mirror_filter.output_pipe = pipe3
-
-    resize_filter.input_pipe = pipe3
-    resize_filter.output_pipe = pipe4
-
-    blur_filter.input_pipe = pipe4
-    blur_filter.output_pipe = pipe5
+    grayscale_filter = GrayscaleFilter(pipe1, pipe2)
+    mirror_filter = MirrorFilter(pipe2, pipe3)
+    resize_filter = ResizeFilter(pipe3, pipe4, 1280, 720)
+    blur_filter = BlurFilter(pipe4, pipe5)
 
     sink = Sink()
 
