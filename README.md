@@ -74,10 +74,10 @@ python main.py
 │   │   └── resize_filter.py
 │   ├── __init__.py
 │   ├── filter.py
-│   ├── main.py
 │   ├── pipe.py
 │   ├── sink.py
 │   └── source.py
+├── main.py
 ├── .gitignore
 ├── README.md
 ├── requirements.txt

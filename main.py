@@ -11,7 +11,7 @@ from src.filters.resize_filter import ResizeFilter
 
 
 def main():
-    source = Source('../video.mp4')
+    source = Source('video.mp4')
     delay = 1000 / source.fps
 
     pipe1 = Pipe()
